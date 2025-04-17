@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -46,13 +47,12 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Redefining Luxury Through Impeccable Housekeeping</h1>
-                <p>Elevate your hospitality standards with our bespoke cleaning solutions designed exclusively for
-                    premium hotels, resorts, and luxury accommodations. Where attention to detail meets operational
-                    excellence.</p>
+                <h1>{{ site.data.home.hero.heading }}</h1>
+                <p>{{ site.data.home.hero.subheading }}</p>
                 <div class="btn-group">
-                    <a href="#contact" class="btn">Request Consultation <i class="fas fa-arrow-right"></i></a>
-                    <a href="#services" class="btn btn-outline">Explore Services</a>
+                    <a href="#contact" class="btn">{{ site.data.home.hero.primary_cta }} <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-outline">{{ site.data.home.hero.secondary_cta }}</a>
                 </div>
             </div>
         </div>
@@ -62,58 +62,25 @@
     <section class="services section-padding" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Tailored Hospitality Solutions</h2>
-                <p>Comprehensive services designed to meet the exacting standards of luxury properties while enhancing
-                    operational efficiency</p>
+                <h2>{{ site.data.home.services.heading }}</h2>
+                <p>{{ site.data.home.services.description }}</p>
             </div>
             <div class="services-grid">
+                {% for service in site.data.home.services.items %}
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1583845112203-29329902330e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                            alt="Daily Housekeeping">
+                        <img src="{{ service.image }}" alt="{{ service.title }}">
                     </div>
                     <div class="service-content">
                         <div class="service-icon">
-                            <i class="fas fa-hotel"></i>
+                            <i class="{{ service.icon }}"></i>
                         </div>
-                        <h3>Daily Housekeeping</h3>
-                        <p>Our meticulous daily cleaning protocols ensure pristine conditions in guest rooms and public
-                            areas, with specialized attention to high-touch surfaces and luxury finishes.</p>
-                        <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
+                        <h3>{{ service.title }}</h3>
+                        <p>{{ service.description }}</p>
+                        <a href="#" class="btn">{{ service.button_text }} <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                            alt="Deep Cleaning">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-broom"></i>
-                        </div>
-                        <h3>Deep Cleaning</h3>
-                        <p>Comprehensive seasonal deep cleaning that revitalizes your property from top to bottom,
-                            reaching every corner with precision using specialized equipment and eco-friendly products.
-                        </p>
-                        <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1600566752229-250ed79470b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                            alt="Turndown Service">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-concierge-bell"></i>
-                        </div>
-                        <h3>Turndown Service</h3>
-                        <p>Evening service that transforms guest rooms into inviting retreats, preparing beds with
-                            luxury linens, adjusting lighting, and leaving thoughtful amenities to enhance the guest
-                            experience.</p>
-                        <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -607,6 +574,17 @@
                 }
             });
         });
+    </script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
     </script>
 </body>
 

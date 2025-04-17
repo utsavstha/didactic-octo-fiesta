@@ -1,0 +1,50 @@
+title: "Rising Sun Hospitality"
+
+hero:
+  heading: "Redefining Luxury Through Impeccable Housekeeping"
+  subheading: "Elevate your hospitality standards with our bespoke cleaning solutions designed exclusively for premium hotels, resorts, and luxury accommodations. Where attention to detail meets operational excellence."
+  primary_cta: "Request Consultation"
+  secondary_cta: "Explore Services"
+  background_images:
+    - image: "/assets/images/hero1.jpg"
+    - image: "/assets/images/hero2.jpg"
+    - image: "/assets/images/hero3.jpg"
+
+services:
+  heading: "Tailored Hospitality Solutions"
+  description: "Comprehensive services designed to meet the exacting standards of luxury properties while enhancing operational efficiency"
+  items:
+    - title: "Daily Housekeeping"
+      description: "Our meticulous daily cleaning protocols ensure pristine conditions in guest rooms and public areas, with specialized attention to high-touch surfaces and luxury finishes."
+      icon: "fas fa-hotel"
+      image: "/assets/images/service1.jpg"
+      button_text: "Learn More"
+    - title: "Deep Cleaning"
+      description: "Comprehensive seasonal deep cleaning that revitalizes your property from top to bottom, reaching every corner with precision using specialized equipment and eco-friendly products."
+      icon: "fas fa-broom"
+      image: "/assets/images/service2.jpg"
+      button_text: "Learn More"
+
+testimonials:
+  heading: "Trusted by Leading Hospitality Brands"
+  description: "Don't just take our word for it—hear from our valued partners"
+  items:
+    - quote: "Working with Rising Sun Hospitality has transformed our guest satisfaction metrics. Their attention to detail and consistent quality have made them an indispensable partner in maintaining our five-star standards."
+      name: "Sarah Johnson"
+      position: "General Manager, The Grand Hotel"
+      image: "/assets/images/testimonial1.jpg"
+    - quote: "Since partnering with Rising Sun, we've seen a 30% reduction in guest complaints related to cleanliness. Their training programs are exceptional."
+      name: "Michael Chen"
+      position: "Director of Operations, Coastal Resorts"
+      image: "/assets/images/testimonial2.jpg"
+
+work:
+  heading: "Join Our Team"
+  description: "Become part of a company that values excellence, professionalism, and growth in the hospitality industry"
+  benefits:
+    - title: "Professional Growth"
+      description: "Comprehensive training programs and clear career progression paths"
+      icon: "fas fa-medal"
+    - title: "Competitive Benefits"
+      description: "Health insurance, retirement plans, and performance bonuses"
+      icon: "fas fa-hand-holding-heart"
