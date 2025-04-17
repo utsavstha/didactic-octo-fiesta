@@ -127,6 +127,16 @@ header.scrolled {
     margin-left: 8px;
 }
 
+.logo_footer {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo span {
     color: var(--secondary);
 }
