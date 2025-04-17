@@ -17,8 +17,8 @@ collections:
           
           # Hero Section
           - label: "Hero Section"
-            name: "hero",
-            widget: "object",
+            name: "hero"
+            widget: "object"
             fields:
               - { name: "heading", label: "Heading", widget: "string" }
               - { name: "subheading", label: "Subheading", widget: "text" }
@@ -28,14 +28,14 @@ collections:
           
           # Services Section
           - label: "Services Section"
-            name: "services",
-            widget: "object",
+            name: "services"
+            widget: "object"
             fields:
               - { name: "heading", label: "Section Heading", widget: "string" }
               - { name: "description", label: "Section Description", widget: "text" }
               - label: "Services"
-                name: "items",
-                widget: "list",
+                name: "items"
+                widget: "list"
                 fields:
                   - { name: "title", label: "Service Title", widget: "string" }
                   - { name: "description", label: "Description", widget: "text" }
@@ -45,14 +45,14 @@ collections:
           
           # Testimonials Section
           - label: "Testimonials Section"
-            name: "testimonials",
-            widget: "object",
+            name: "testimonials"
+            widget: "object"
             fields:
               - { name: "heading", label: "Section Heading", widget: "string" }
               - { name: "description", label: "Section Description", widget: "text" }
               - label: "Testimonials"
-                name: "items",
-                widget: "list",
+                name: "items"
+                widget: "list"
                 fields:
                   - { name: "quote", label: "Testimonial Text", widget: "text" }
                   - { name: "name", label: "Client Name", widget: "string" }
@@ -61,14 +61,14 @@ collections:
           
           # Work With Us Section
           - label: "Work With Us Section"
-            name: "work",
-            widget: "object",
+            name: "work"
+            widget: "object"
             fields:
               - { name: "heading", label: "Section Heading", widget: "string" }
               - { name: "description", label: "Section Description", widget: "text" }
               - label: "Benefits"
-                name: "benefits",
-                widget: "list",
+                name: "benefits"
+                widget: "list"
                 fields:
                   - { name: "title", label: "Benefit Title", widget: "string" }
                   - { name: "description", label: "Benefit Description", widget: "text" }
