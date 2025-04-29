@@ -231,16 +231,16 @@ header.scrolled {
 }
 
 .hero-slide:nth-child(1) {
-    background-image: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.6)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.6)), url('./one.png');
 }
 
 .hero-slide:nth-child(2) {
-    background-image: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.6)), url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.6)), url('./two.png');
 }
 
-.hero-slide:nth-child(3) {
+/* .hero-slide:nth-child(3) {
     background-image: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.6)), url('https://plus.unsplash.com/premium_photo-1686782502386-f3f3114ed9b4?q=80&w=3270&auto=format&fit=crop');
-}
+} */
 
 .hero-content {
     position: relative;
