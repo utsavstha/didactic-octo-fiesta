@@ -363,24 +363,14 @@
                         </div>
                         <div class="form-group">
                             <label for="applicant-position" class="form-label">Position of Interest</label>
-                           <label>Select a Service:</label>
-    <div class="radio-group">
-      <label class="custom-radio">Daily Housekeeping
-        <input type="radio" name="service" value="Daily Housekeeping" required>
-        <span class="checkmark"></span>
-      </label>
-      <label class="custom-radio">Deep Cleaning
-        <input type="radio" name="service" value="Deep Cleaning">
-        <span class="checkmark"></span>
-      </label>
-      <label class="custom-radio">Turndown Service
-        <input type="radio" name="service" value="Turndown Service">
-        <span class="checkmark"></span>
-      </label>
-      <label class="custom-radio">Linen Management
-        <input type="radio" name="service" value="Linen Management">
-        <span class="checkmark"></span>
-      </label>
+                            <select id="applicant-position" class="form-control" required>
+                                <option value="">Select position</option>
+                                <option value="housekeeper">Housekeeper</option>
+                                <option value="supervisor">Supervisor</option>
+                                <option value="manager">Account Manager</option>
+                                <option value="trainer">Training Specialist</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="applicant-resume" class="form-label">Resume/CV</label>
