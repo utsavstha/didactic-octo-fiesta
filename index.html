@@ -443,19 +443,19 @@
 
                         <div class="form-group">
                             <label for="name" class="form-label">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="John Smith" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Smith" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="0400 000 000">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="0400 000 000">
                         </div>
                         <div class="form-group">
                             <label for="service" class="form-label">Service Interested In</label>
-                            <select id="service" class="form-control">
+                            <select id="service" class="form-control" name="service">
                                 <option value="">Select a service</option>
                                 <option value="daily">Daily Housekeeping</option>
                                 <option value="deep">Deep Cleaning</option>
@@ -466,7 +466,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message" class="form-label">How can we help you?</label>
-                            <textarea id="message" class="form-control"
+                            <textarea id="message" class="form-control" name="message"
                                 placeholder="Tell us about your property and needs..." required></textarea>
                         </div>
                          <input type="hidden" name="redirect" value="https://web3forms.com/success">
